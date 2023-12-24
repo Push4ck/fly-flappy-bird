@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaqueries.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favico.png" sizes="32x32" type="images/x-icon">
+
+    <!-- Title -->
+    <title>Flappy Bird Game</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Game Title -->
+        <h1 class="title">Flappy Bird</h1>
+
+        <!-- Game Rules -->
+        <div class="rules">
+            <button id="rulesButton">How to Play?</button>
+            <div id="rulesPopup" class="rules-popup">
+                <span class="close" onclick="closeRulesPopup()">&times;</span>
+                <!-- Add your rules content here -->
+                <p class="rulesText"><span class="textSpan">1.</span> Click or press "Space," "W," or "Arrow Up" to start.</p>
+                <p class="rulesText"><span class="textSpan">2.</span> Tap to make the bird ascend and navigate through pipes.</p>
+                <p class="rulesText"><span class="textSpan">3.</span> Earn points by passing through pipe gaps.</p>
+                <p class="rulesText"><span class="textSpan">4.</span> Game ends if the bird hits the ground or pipes.</p>
+                <p class="rulesText"><span class="textSpan">5.</span> Press "P" or "Escape" to pause and resume.</p>
+                <p class="rulesText"><span class="textSpan">6.</span> Click "How to Play?" for instructions.</p>
+            </div>
+        </div>
+
+        <!-- Score Container -->
+        <div class="score-container">
+          <!-- Best Score Display -->
+          <div id="bestScore"></div>
+          
+          <!-- Current Score Display -->
+          <div id="currentScore"></div>
+        </div>
+    </header>
+
+    <!-- Game Canvas -->
+    <canvas id="canvas" width="431" height="768"></canvas>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

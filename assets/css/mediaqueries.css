@@ -1,0 +1,55 @@
+/* Styles for screens smaller than 600px (mobile) */
+@media only screen and (max-width: 600px) {
+    #canvas {
+      height: 82lvh;
+      width: 100%;
+    }
+  
+    header {
+      width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 12px;
+    }
+
+    .rules {
+        top: 8px;
+    }
+
+    .rules button {
+        font-size: 14px;
+    }
+
+    .rules-popup {
+        width: 70%;
+    }
+
+    .rulesText {
+        font-size: 10px;
+        text-align: left;
+    }
+}
+  
+/* Styles for screens between 601px and 768px (smaller tablets) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #canvas {
+      height: 75lvh; /* Adjust the height for smaller tablets */
+    }
+}
+  
+/* Styles for screens between 769px and 1024px (larger tablets) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #canvas {
+      height: 70lvh; /* Adjust the height for larger tablets */
+    }
+}
+  
+/* Styles for screens between 1025px and 1440px (larger screens) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    #canvas {
+      height: 65lvh; /* Adjust the height for larger screens */
+    }
+}  
